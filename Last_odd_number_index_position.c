@@ -1,19 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int a;
-    scanf("%d",&a);
-    int arr[a];
-    for(int i = 0; i < a; i++)
+    int n;
+    scanf("%d",&n);
+    int a[n],i,d;
+    for(i=0;i<n;i++)
     {
-        scanf("%d",&arr[i]);
-    }   
-    for(int i=a-1;i>=0;i--)
-    {
-        if(arr[i]%2==1)
+        scanf("%d",&a[i]);
+        if(a[i]%2!=0)
         {
-            printf("%d",i);
-            break;
+            d=i;
         }
     }
+    printf("%d",d);
 }
